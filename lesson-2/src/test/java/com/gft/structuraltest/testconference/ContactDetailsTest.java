@@ -16,9 +16,21 @@ public class ContactDetailsTest {
     @Parameters({
             "jacek@wp.pl,false",
             "jacek,true"
-    })
-    public void shouldReturnTrueIfFirstNameIsValid(String firstName, boolean result)  {
-        assertEquals(ContactDetails.validateFirstName(firstName), result);
+    }) 
+	@Test
+    public void shouldReturnTrueIfFirstNameIsValid()  
+	{
+		boolean exceptedResult = true;
+		boolean actualResult = ContactDetails.validateFirstName("Jacek");
+        assertEquals(exceptedResult,actualResult);
     }
+	
+	@Test
+	public void shouldReturnFalse()
+	{
+		boolean exceptedResult = false;
+		boolean actualResult = ContactDetails.validateFirstName("qwersrgsdf54");
+        assertEquals(exceptedResult,actualResult);
+	}
 }
 
