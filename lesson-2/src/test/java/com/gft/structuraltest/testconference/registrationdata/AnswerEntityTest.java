@@ -99,6 +99,15 @@ public class AnswerEntityTest{
         AnswerEntity an2=new AnswerEntity();        
         assertFalse(an1.equals(an2));
     }
+
+	@Test
+	public void shouldReturnFalseWhenIdIsNotNullAndNotEqual(){
+		AnswerEntity an1=new AnswerEntity();
+		AnswerEntity an2=new AnswerEntity();
+		an1.setId((long)1);
+		an2.setId((long)2);
+		assertFalse(an1.equals(an2));
+	}
     
         
 }
