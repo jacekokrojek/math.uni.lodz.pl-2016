@@ -20,9 +20,60 @@ public class AnswerEntityTest{
     }
 	
 	@Test
-	public void shouldReturnTrueWhenObjectIsEqual(){
+	public void shouldReturnFalseWhenObjectHasDiffClass(){
         AnswerEntity an1 = new AnswerEntity();
-        AnswerEntity an2 = new AnswerEntity();
-        assertTrue(an1.equals(an2));
+        String an2 = new String();
+        assertFalse(an1.equals(an2));
     }
+	
+	@Test
+	public void shouldReturnFalseWhenObjectAnswerIsNotNull(){
+		AnswerEntity an1 = new AnswerEntity();
+        AnswerEntity an2 = new AnswerEntity();
+		an2.setAnswerText("text");
+        assertFalse(an1.equals(an2));
+	}
+	
+	@Test
+	public void shouldReturnFalseWhenObjectAnswerIsNotSame(){
+		AnswerEntity an1 = new AnswerEntity();
+        AnswerEntity an2 = new AnswerEntity();
+		an1.setAnswerText("text1");
+		an2.setAnswerText("text2");
+        assertFalse(an1.equals(an2));
+	}
+	
+	@Test
+	public void shouldReturnFalseWhenObjectIdIsNotNull(){
+		AnswerEntity an1 = new AnswerEntity();
+        AnswerEntity an2 = new AnswerEntity();
+		an2.setId(new Long(10));
+        assertFalse(an1.equals(an2));
+	}
+	
+	@Test
+	public void shouldReturnFalseWhenObjectIdIsNotSame(){
+		AnswerEntity an1 = new AnswerEntity();
+        AnswerEntity an2 = new AnswerEntity();
+		an1.setId(new Long(1));
+		an2.setId(new Long(10));
+        assertFalse(an1.equals(an2));
+	}
+	
+	@Test
+	public void shouldReturnFalseWhenObjectQuestionIsNotNull(){
+		AnswerEntity an1 = new AnswerEntity();
+        AnswerEntity an2 = new AnswerEntity();
+		an2.setQuestion(new QuestionEntity());
+		assertFalse(an1.equals(an2));
+	}
+
+	@Test
+	public void shouldReturnFalseWhenObjectQuestionIsNotSame(){
+		AnswerEntity an1 = new AnswerEntity();
+        AnswerEntity an2 = new AnswerEntity();
+		an1.setQuestion(new QuestionEntity());
+		an2.setQuestion(new QuestionEntity());
+		assertFalse(an1.equals(an2));
+	}
 }
