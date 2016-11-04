@@ -20,5 +20,18 @@ public class ContactDetailsTest {
     public void shouldReturnTrueIfFirstNameIsValid(String firstName, boolean result)  {
         assertEquals(ContactDetails.validateFirstName(firstName), result);
     }
+    /*@Test
+    public void shouldReturnTrueIfFirstNameIsValid()  {
+        boolean expectedResult=true;
+        boolean actualResult=ContactDetails.validateFirstName("Jacek");
+        assertEquals(expectedResult, actualResult);
+    }
+    
+    @Test
+    public void shouldReturnFalseIfFirstNameIsNotValid(){
+        boolean expectedResult=false;
+        boolean actualResult=ContactDetails.validateFirstName("qwertyuioplkjhgfdsazxcv");
+        assertEquals(expectedResult, actualResult);
+    }*/
 }
 
