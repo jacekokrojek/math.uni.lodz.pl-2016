@@ -85,4 +85,24 @@ public class AnswerEntityTest {
         assertFalse(an1.equals(an2));
     }
 
+    @Test
+    public void shouldReturnTrueWhenObjectEquals() {
+        AnswerEntity an1 = new AnswerEntity();
+        AnswerEntity an2 = new AnswerEntity();
+        QuestionEntity an3 = new QuestionEntity();
+        
+        an1.setId(new Long(1));
+        an2.setId(an1.getId());
+        
+        an1.setAnswerText("Test Text");
+        an2.setAnswerText(an1.getAnswerText());
+        
+        an1.setQuestion(an3);
+        an2.setQuestion(an3);
+        
+        assertTrue(an1.equals(an2));
+    }
+    
+    
+
 }
