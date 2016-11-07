@@ -38,8 +38,16 @@ public class AnswerEntityTest {
     public void shouldReturnFalseWhenIdIsDiff() {
         AnswerEntity an1 = new AnswerEntity();
         AnswerEntity an2 = new AnswerEntity();
-        an2.setId(new Long(1));
+        an1.setId(new Long(1));
         an2.setId(new Long(2));
+        assertFalse(an1.equals(an2));
+    }
+
+    @Test
+    public void shouldReturnFalseWhenOtherQuestinonIsNotNull() {
+        AnswerEntity an1 = new AnswerEntity();
+        AnswerEntity an2 = new AnswerEntity();
+        an2.setQuestion(new QuestionEntity());
         assertFalse(an1.equals(an2));
     }
 
@@ -59,4 +67,22 @@ public class AnswerEntityTest {
         an2.setAnswerText("Answer2");
         assertFalse(an1.equals(an2));
     }
+
+    @Test
+    public void shouldReturnFalseWhenQuestionIsNull() {
+        AnswerEntity an1 = new AnswerEntity();
+        AnswerEntity an2 = new AnswerEntity();
+        an1.setQuestion(new QuestionEntity());
+        assertFalse(an1.equals(an2));
+    }
+
+    @Test
+    public void shouldReturnFalseWhenQuestionIsDiff() {
+        AnswerEntity an1 = new AnswerEntity();
+        AnswerEntity an2 = new AnswerEntity();
+        an1.setQuestion(new QuestionEntity());
+        an2.setQuestion(new QuestionEntity());
+        assertFalse(an1.equals(an2));
+    }
+
 }
