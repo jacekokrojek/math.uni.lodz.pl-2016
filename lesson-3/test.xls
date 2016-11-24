@@ -1,0 +1,16 @@
+ClientType	InvoiceCost	Discount	FreeTransport
+Super Client	150	15%	YES
+Registered	300	13%	YES
+Super Client	50	10%	YES
+Registered	150	7%	YES
+Guest	50	1%	NO
+Guest	20	0%	NO
+Guest	300	5%	YES
+Guest	0	0%	NO
+Super Client	300	20%	YES
+Super Client	0	10%	YES
+Guest	150	5%	NO
+Registered	20	5%	NO
+Super Client	20	10%	YES
+Registered	50	5%	NO
+Registered	0	5%	NO
