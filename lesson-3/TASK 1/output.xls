@@ -1,25 +1,13 @@
-Client type	discount	Free Transport
-Super Client	10%	YES
-Guest	7%	YES
-Guest	10%	NO
-Registered	5%	YES
-Registered	10%	NO
-Registered	0%	NO
-Super Client	7%	NO
-Super Client	0%	YES
-Guest	1%	YES
-Registered	7%	NO
-Super Client	5%	NO
-Guest	20%	NO
-Registered	1%	NO
-Guest	15%	NO
-Super Client	13%	NO
-Registered	20%	YES
-Super Client	15%	YES
-Guest	0%	YES
-Registered	13%	YES
-Guest	5%	NO
-Super Client	20%	NO
-Registered	15%	YES
-Super Client	1%	YES
-Guest	13%	YES
+Client type	Invoice Cost	discount	Free Transport
+Guest	50	1%	No
+Registered	150	7%	Yes
+Registered	300	13%	Yes
+Registered	50	5%	No
+Guest	150	5%	No
+Guest	300	5%	Yes
+Super Client	300	20%	Yes
+Guest	20	0%	No
+Registered	20	5%	No
+Super Client	50	10%	Yes
+Super Client	150	15%	Yes
+Super Client	20	10%	Yes
