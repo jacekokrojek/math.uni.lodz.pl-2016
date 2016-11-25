@@ -1,0 +1,3 @@
+Client type: Guest, Registered, Super Client
+discount: 0%, 1%, 5%, 7%, 10%, 13%, 15%, 20%
+Free Transport: YES, NO
