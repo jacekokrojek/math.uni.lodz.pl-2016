@@ -1,0 +1,14 @@
+Hi,
+
+According to our today discussion around issues with accessing MR Buggy 2 application putting optional application you can work on while performing exploratory testing session.
+
+- Go to http://www.orangehrm.com/OpenSource.php and expand 'Features'
+- Chose one of the feature and read the short spec of that functionality
+- Run Rapid reporter and define your charter
+- Open following link http://opensource.demo.orangehrmlive.com/
+- Run your session and remember to take some notes
+- Convert session report to html format
+- Send all reports in html format to https://github.com/jacekokrojek/math.uni.lodz.pl-2016
+
+Best regards,
+Łukasz Urbaniak
