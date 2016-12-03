@@ -1,0 +1,19 @@
+Hi All,
+
+Regarding to your questions about How to use PICT Tool
+
+Below you will find links which helps you to get all necessary information :
+
+PICT Tool to download
+http://download.microsoft.com/download/f/5/5/f55484df-8494-48fa-8dbd-8c6f76cc014b/pict33.msi
+
+PICT Tool information 
+https://msdn.microsoft.com/en-us/library/cc150619.aspx
+
+PICT Tool User Guide:
+http://www.amibugshare.com/pict/help.html#_Toc127249182
+
+This video also can be useful for you:
+https://www.youtube.com/watch?v=IzQXuWVNi_8
+
+
