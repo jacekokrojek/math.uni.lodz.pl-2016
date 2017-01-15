@@ -40,7 +40,7 @@ public class AnswerEntity {
 	public void setAnswerText(String answerText) {
 		this.answerText = answerText;
 	}
-
+	
 	public QuestionEntity getQuestion() {
 		return question;
 	}
